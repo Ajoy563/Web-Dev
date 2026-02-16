@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Practice set</title>
+	<link rel="stylesheet" href="practiceset.css">
+	<!-- <style>
+		.class-button {
+			color: blue;
+		}
+	</style> -->
+</head>
+<body>
+	<!-- <main>
+		<button class="class-button">Click</button>
+		<button id="id-button">Id Button</button>
+		<button class="class-button">Class Button</button>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, autem.</p>
+	</main> -->
+
+	<button class="bag-button" onclick=" cartQuantity++;
+	 document.querySelector('#cart-summary').innerText = `Your Bag has ${cartQuantity} items`;">Add to Bag</button>
+
+	<button class="wish-button" onclick=" cartQuantity--;
+	 document.querySelector('#cart-summary').innerText = `Your Bag has ${cartQuantity} items`;">Move to Wishlist</button>
+
+	<button class="bag-button" onclick=" cartQuantity = cartQuantity + 2;
+	 document.querySelector('#cart-summary').innerText = `Your Bag has ${cartQuantity} items`;">Add 1+1 Sale item</button>
+
+	<h1 id="cart-summary">Your bag has 0 items</h1>
+
+	<script>
+		let cartQuantity = 0;
+		document.querySelector('#cart-summary').innerText = `Your Bag has ${cartQuantity} items`;
+	</script>
+</body>
+</html>
